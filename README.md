@@ -1,8 +1,4 @@
-
-Supplementary material
-"HumAnimate: Text- and Pose-Guided Video Generation Benchmark"
-
-NeurIPS 2024 Datasets and Benchmark track, Paper ID: 680
+HumAnimate Benchmark Visualizations
 ===========================================================================
 
 >> index.html
