@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HumAnimate Inferences</title>
+</head>
+<body>
+    <center>
+        <h1>Visualisations and results from HumAnimate benchmark.</h1>
+    </center>
+
+    <h2>Note:</h2>
+    <h3>Preferred browser- Firefox and Chrome.</h3> Works on other browsers too but may be slow to load.
+    (Optional) Due to the volume of the mp4 files, the page may be slow to load. Therefore, we request you to please wait for results to load.<br>
+
+    <br>
+    <h3>Thank you for taking time to review this page and our work!</h3>
+    <br>
+
+    <h2>Table of Contents</h2>
+    <ul>
+        <li><a href="#base_set">Base set of pose sequence in T2I-Adapter pose-conditioning style</a></li>
+        <li><a href="#advanced_set">Advanced set of pose sequence in ControlNet pose-conditioning style</a></li>
+        <li><a href="#camera_motion">Selective camera motion pose sequences</a></li>
+        <li><a href="#pose_size_outputs">Video outputs by different methods for "Varying Subject sizes"</a></li>
+        <li><a href="#pose_fps_outputs">Video outputs by different methods for "Different sampling rates"</a></li>
+        <li><a href="#kid_adult_outputs">Video outputs by different methods for "Kid/Adult body shape control"</a></li>
+        <li><a href="#fat_fit_outputs">Video outputs by different methods for "Fat/Fit body shape control"</a></li>
+        <li><a href="./video_outputs_all_actions.html">Video outputs by different methods for all the pose sequences (A DIFFERENT PAGE)</a></li>
+    </ul>
+
+    <br><br>
+    <h2><a id="base_set">Visualisation T2I-Adapter style pose sequences for Base Set of pose sequences.</a></h2>
+    <table border="1px">
+        <tr style="outline: thin solid">
+            <th style="outline: thin solid">Stand up and Sit</th>
+            <th style="outline: thin solid">On-spot jogging</th>
+            <th style="outline: thin solid">Standing wave</th>
+            <th style="outline: thin solid">Jumping jacks</th>
+        </tr>
+        <tr style="outline: thin solid">
+            <td style="outline: thin solid">
+                <div>
+                    <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                    <source src="assets/001_StandUpAndSit_hrnet_stickfigure_5_normal_no_NA.mp4" type="video/mp4">
+                </div>
+            </td>
+            <td style="outline: thin solid">
+                <div>
+                    <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                    <source src="assets/002_StandingJog_hrnet_stickfigure_5_normal_no_NA.mp4" type="video/mp4">
+                </div>
+            </td>
+            <td style="outline: thin solid">
+                <div>
+                    <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                    <source src="assets/003_StandingWave_hrnet_stickfigure_5_normal_no_NA.mp4" type="video/mp4">
+                </div>
+            </td>
+            <td style="outline: thin solid">
+                <div>
+                    <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                    <source src="assets/004_JumpingJacksFront_hrnet_stickfigure_5_normal_no_NA.mp4" type="video/mp4">
+                </div>
+            </td>
+        <tr style="outline: thin solid">
+        <tr style="outline: thin solid">
+            <th style="outline: thin solid">Bend down and get up</th>
+            <th style="outline: thin solid">On-spot dance</th>
+            <th style="outline: thin solid">High knees</th>
+            <th style="outline: thin solid">Squats</th>
+        </tr>
+        <tr style="outline: thin solid">
+            <td style="outline: thin solid">
+                <div>
+                    <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                    <source src="assets/005_BendFacingFront_hrnet_stickfigure_5_normal_no_NA.mp4" type="video/mp4">
+                </div>
+            </td>
+            <td style="outline: thin solid">
+                <div>
+                    <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                    <source src="assets/006_OnSpotDance_hrnet_stickfigure_5_normal_no_NA.mp4" type="video/mp4">
+                </div>
+            </td>
+            <td style="outline: thin solid">
+                <div>
+                    <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                    <source src="assets/007_HighKnees_hrnet_stickfigure_5_normal_no_NA.mp4" type="video/mp4">
+                </div>
+            </td>
+            <td style="outline: thin solid">
+                <div>
+                    <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                    <source src="assets/008_SumoSquat_hrnet_stickfigure_5_normal_no_NA.mp4" type="video/mp4">
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+    <br><br>
+    <h2><a id="advanced_set">Visualisation ControlNet style pose sequences for Advanced Set of pose sequences.</a></h2>
+    <table border="1px">
+        <tr style="outline: thin solid">
+            <th style="outline: thin solid">Walk</th>
+            <th style="outline: thin solid">Dance with rotation</th>
+            <th style="outline: thin solid">Cartwheel</th>
+            <th style="outline: thin solid">Moonwalk</th>
+        </tr>
+        <tr style="outline: thin solid">
+            <td style="outline: thin solid">
+                <div>
+                    <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                    <source src="assets/009_WalkL2RR2L_openpose_keypose_5_normal_no_NA.mp4" type="video/mp4">
+                </div>
+            </td>
+            <td style="outline: thin solid">
+                <div>
+                    <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                    <source src="assets/010_RotationDance_openpose_keypose_5_normal_no_NA.mp4" type="video/mp4">
+                </div>
+            </td>
+            <td style="outline: thin solid">
+                <div>
+                    <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                    <source src="assets/011_Cartwheel_openpose_keypose_5_normal_no_NA.mp4" type="video/mp4">
+                </div>
+            </td>
+            <td style="outline: thin solid">
+                <div>
+                    <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                    <source src="assets/012_Moonwalk_openpose_keypose_5_normal_no_NA.mp4" type="video/mp4">
+                </div>
+            </td>
+        <tr style="outline: thin solid">
+        <tr style="outline: thin solid">
+            <th style="outline: thin solid">Taichi action</th>
+            <th style="outline: thin solid">Knee-tuck jumps</th>
+            <th style="outline: thin solid">Lateral jumps</th>
+            <th style="outline: thin solid">Alternate lungs</th>
+        </tr>
+        <tr style="outline: thin solid">
+            <td style="outline: thin solid">
+                <div>
+                    <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                    <source src="assets/013_Taichi_openpose_keypose_5_normal_no_NA.mp4" type="video/mp4">
+                </div>
+            </td>
+            <td style="outline: thin solid">
+                <div>
+                    <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                    <source src="assets/014_KneeTuckJumps_openpose_keypose_5_normal_no_NA.mp4" type="video/mp4">
+                </div>
+            </td>
+            <td style="outline: thin solid">
+                <div>
+                    <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                    <source src="assets/015_LateralJumps_openpose_keypose_5_normal_no_NA.mp4" type="video/mp4">
+                </div>
+            </td>
+            <td style="outline: thin solid">
+                <div>
+                    <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                    <source src="assets/016_AlternatingLunge_openpose_keypose_5_normal_no_NA.mp4" type="video/mp4">
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+    <h2><a id="camera_motion">Camera motion pose sequences for "Squat" action. The pixel translation stride is 5 here.</a></h2>
+    <table border="1px">
+        <thead>
+            <tr style="outline: thin solid">
+                <th style="outline: thin solid">Motion direction</th>
+                <th style="outline: thin solid">Squats</th>
+                <th style="outline: thin solid">On spot jogging</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="outline: thin solid">
+                <td style="outline: thin solid">Camera moves from left to right (L2R)</td>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/008_SumoSquat_openpose_keypose_5_normal_L2Rst5_NA.mp4" type="video/mp4">
+                    </div>
+                </td>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/002_StandingJog_openpose_keypose_5_normal_L2Rst5_NA.mp4" type="video/mp4">
+                    </div>
+                </td>
+            </tr>
+            <tr style="outline: thin solid">
+                <td style="outline: thin solid">Camera moves towards the subject (Zoom-In)</td>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/008_SumoSquat_openpose_keypose_5_normal_Zin5_NA.mp4" type="video/mp4">
+                    </div>
+                </td>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/002_StandingJog_openpose_keypose_5_normal_Zin5_NA.mp4" type="video/mp4">
+                    </div>
+                </td>
+        </tbody>
+    </table>
+
+    <br><br>
+    <h2><a id="pose_size_outputs">Video outputs by four methods for subject size experiment for prompt "A man performing taichi in a park."</a></h2>
+    <table border="1px">
+        <thead>
+            <tr style="outline: thin solid">
+                <th style="outline: thin solid">Subject Size</th>
+                <th style="outline: thin solid">Text2Video-Zero</th>
+                <th style="outline: thin solid">ControlVideo</th>
+                <th style="outline: thin solid">ConditionVideo</th>
+                <th style="outline: thin solid">Follow Your Pose</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="outline: thin solid">
+                <td style="outline: thin solid">Small</td>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/Text2Video_Zero/2_PoseSize_00304_A_man_performing_Taichi_in_a_park.mp4" type="video/mp4">
+                    </div>
+                </td>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/ControlVideo/2_PoseSize_00304_A_man_performing_Taichi_in_a_park.mp4" type="video/mp4">
+                    </div>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/ConditionVideo/2_PoseSize_00304_A_man_performing_Taichi_in_a_park.mp4" type="video/mp4">
+                    </div>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/FollowYourPose/2_PoseSize_00304_A_man_performing_Taichi_in_a_park.mp4" type="video/mp4">
+                    </div>
+                </td>
+            </tr>
+            <tr style="outline: thin solid">
+                <td style="outline: thin solid">Normal</td>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/Text2Video_Zero/0_Base_00184_A_man_performing_Taichi_in_a_park.mp4" type="video/mp4">
+                    </div>
+                </td>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/ControlVideo/0_Base_00184_A_man_performing_Taichi_in_a_park.mp4" type="video/mp4">
+                    </div>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/ConditionVideo/0_Base_00184_A_man_performing_Taichi_in_a_park.mp4" type="video/mp4">
+                    </div>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/FollowYourPose/0_Base_00184_A_man_performing_Taichi_in_a_park.mp4" type="video/mp4">
+                    </div>
+                </td>
+            </tr>
+            <tr style="outline: thin solid">
+                <td style="outline: thin solid">Large</td>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/Text2Video_Zero/2_PoseSize_00306_A_man_performing_Taichi_in_a_park.mp4" type="video/mp4">
+                    </div>
+                </td>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/ControlVideo/2_PoseSize_00306_A_man_performing_Taichi_in_a_park.mp4" type="video/mp4">
+                    </div>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/ConditionVideo/2_PoseSize_00306_A_man_performing_Taichi_in_a_park.mp4" type="video/mp4">
+                    </div>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/FollowYourPose/2_PoseSize_00306_A_man_performing_Taichi_in_a_park.mp4" type="video/mp4">
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+    <h2><a id="pose_fps_outputs">Video outputs by four methods for different sampling rates (FPS) for prompt "A man performing jumping jacks in a park."</a></h2>
+    <table border="1px">
+        <thead>
+            <tr style="outline: thin solid">
+                <th style="outline: thin solid">Sampling rate (FPS)</th>
+                <th style="outline: thin solid">Text2Video-Zero</th>
+                <th style="outline: thin solid">ControlVideo</th>
+                <th style="outline: thin solid">ConditionVideo</th>
+                <th style="outline: thin solid">Follow Your Pose</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="outline: thin solid">
+                <td style="outline: thin solid"><center>2</center></td>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/Text2Video_Zero/3_FPS_00204_A_man_performing_jumping_jacks_in_a_park.mp4" type="video/mp4">
+                    </div>
+                </td>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/ControlVideo/3_FPS_00204_A_man_performing_jumping_jacks_in_a_park.mp4" type="video/mp4">
+                    </div>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/ConditionVideo/3_FPS_00204_A_man_performing_jumping_jacks_in_a_park.mp4" type="video/mp4">
+                    </div>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/FollowYourPose/3_FPS_00204_A_man_performing_jumping_jacks_in_a_park.mp4" type="video/mp4">
+                    </div>
+                </td>
+            </tr>
+            <tr style="outline: thin solid">
+                <td style="outline: thin solid"><center>5</center></td>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/Text2Video_Zero/0_Base_00166_A_man_performing_jumping_jacks_in_a_park.mp4" type="video/mp4">
+                    </div>
+                </td>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/ControlVideo/0_Base_00166_A_man_performing_jumping_jacks_in_a_park.mp4" type="video/mp4">
+                    </div>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/ConditionVideo/0_Base_00166_A_man_performing_jumping_jacks_in_a_park.mp4" type="video/mp4">
+                    </div>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/FollowYourPose/0_Base_00166_A_man_performing_jumping_jacks_in_a_park.mp4" type="video/mp4">
+                    </div>
+                </td>
+            </tr>
+            <tr style="outline: thin solid">
+                <td style="outline: thin solid"><center>8</center></td>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/Text2Video_Zero/3_FPS_00206_A_man_performing_jumping_jacks_in_a_park.mp4" type="video/mp4">
+                    </div>
+                </td>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/ControlVideo/3_FPS_00206_A_man_performing_jumping_jacks_in_a_park.mp4" type="video/mp4">
+                    </div>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/ConditionVideo/3_FPS_00206_A_man_performing_jumping_jacks_in_a_park.mp4" type="video/mp4">
+                    </div>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/FollowYourPose/3_FPS_00206_A_man_performing_jumping_jacks_in_a_park.mp4" type="video/mp4">
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+    <h2><a id="kid_adult_outputs">Video outputs by four methods for "Foreground shape control" for prompt "A male &lt; kid/adult &gt; performing lunges while facing the camera in a park."</a></h2>
+    <table border="1px">
+        <thead>
+            <tr style="outline: thin solid">
+                <th style="outline: thin solid">Age group</th>
+                <th style="outline: thin solid">Text2Video-Zero</th>
+                <th style="outline: thin solid">ControlVideo</th>
+                <th style="outline: thin solid">ConditionVideo</th>
+                <th style="outline: thin solid">Follow Your Pose</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="outline: thin solid">
+                <td style="outline: thin solid"><center>A male kid</center></td>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/Text2Video_Zero/7_shapeControl_00762_A_male_kid_performing_lunges_while_facing_the_camera_in_a_park.mp4" type="video/mp4">
+                    </div>
+                </td>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/ControlVideo/7_shapeControl_00762_A_male_kid_performing_lunges_while_facing_the_camera_in_a_park.mp4" type="video/mp4">
+                    </div>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/ConditionVideo/7_shapeControl_00762_A_male_kid_performing_lunges_while_facing_the_camera_in_a_park.mp4" type="video/mp4">
+                    </div>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/FollowYourPose/7_shapeControl_00762_A_male_kid_performing_lunges_while_facing_the_camera_in_a_park.mp4" type="video/mp4">
+                    </div>
+                </td>
+            </tr>
+            <tr style="outline: thin solid">
+                <td style="outline: thin solid"><center>A male adult</center></td>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/Text2Video_Zero/7_shapeControl_00763_A_male_adult_performing_lunges_while_facing_the_camera_in_a_park.mp4" type="video/mp4">
+                    </div>
+                </td>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/ControlVideo/7_shapeControl_00763_A_male_adult_performing_lunges_while_facing_the_camera_in_a_park.mp4" type="video/mp4">
+                    </div>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/ConditionVideo/7_shapeControl_00763_A_male_adult_performing_lunges_while_facing_the_camera_in_a_park.mp4" type="video/mp4">
+                    </div>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/FollowYourPose/7_shapeControl_00763_A_male_adult_performing_lunges_while_facing_the_camera_in_a_park.mp4" type="video/mp4">
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <br><br>
+    <h2><a id="fat_fit_outputs">Video outputs by four methods for "Foreground shape control" for prompt "A &lt; fit/fat &gt; male performing lunges while facing the camera in a park</a>."</h2>
+    <table border="1px">
+        <thead>
+            <tr style="outline: thin solid">
+                <th style="outline: thin solid">Body shape</th>
+                <th style="outline: thin solid">Text2Video-Zero</th>
+                <th style="outline: thin solid">ControlVideo</th>
+                <th style="outline: thin solid">ConditionVideo</th>
+                <th style="outline: thin solid">Follow Your Pose</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="outline: thin solid">
+                <td style="outline: thin solid"><center>A fat woman</center></td>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/Text2Video_Zero/7_shapeControl_00764_A_fat_woman_performing_lunges_while_facing_the_camera_in_a_park.mp4" type="video/mp4">
+                    </div>
+                </td>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/ControlVideo/7_shapeControl_00764_A_fat_woman_performing_lunges_while_facing_the_camera_in_a_park.mp4" type="video/mp4">
+                    </div>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/ConditionVideo/7_shapeControl_00764_A_fat_woman_performing_lunges_while_facing_the_camera_in_a_park.mp4" type="video/mp4">
+                    </div>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/FollowYourPose/7_shapeControl_00764_A_fat_woman_performing_lunges_while_facing_the_camera_in_a_park.mp4" type="video/mp4">
+                    </div>
+                </td>
+            </tr>
+            <tr style="outline: thin solid">
+                <td style="outline: thin solid"><center>A fit woman</center></td>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/Text2Video_Zero/7_shapeControl_00765_A_fit_woman_performing_lunges_while_facing_the_camera_in_a_park.mp4" type="video/mp4">
+                    </div>
+                </td>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/ControlVideo/7_shapeControl_00765_A_fit_woman_performing_lunges_while_facing_the_camera_in_a_park.mp4" type="video/mp4">
+                    </div>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/ConditionVideo/7_shapeControl_00765_A_fit_woman_performing_lunges_while_facing_the_camera_in_a_park.mp4" type="video/mp4">
+                    </div>
+                <td style="outline: thin solid">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" max-width="100%" controls="controls" width="250" height="250">
+                        <source src="assets/FollowYourPose/7_shapeControl_00765_A_fit_woman_performing_lunges_while_facing_the_camera_in_a_park.mp4" type="video/mp4">
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>
